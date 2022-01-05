@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="kwitter.css">
+<script src="kwitter.js"></script>
+</head>
+<body>	
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img id="mail_image" src="m2.png">
+	</sup>
+</h1>
+	<div id="box" class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+	<img src="DragonRed.jpg" class="logo">
+		<h3 id="text1">See what is happening in the world right now</h3>
+		<h4 id="text2">Join Kwitter Now</h4>
+		<div class="form-group">
+		  <label id="un">User Name:</label>
+		  <input type="text" class="form-control" id="user_name" placeholder="username">
+
+          <br>
+
+          <label id="p">Password:</label>
+		  <input type="password" class="form-control" id="password" placeholder="password">
+          <input type="checkbox" onclick="myFunction()"><span id="show_password"> Show Password </span>
+		</div>
+        <br>
+        <h5 id="terms" style="color: white;">By clicking "log in", you agree to kwitters Terms of Service</h5>
+        <br>
+		<h5 id="terms_click" style="color: white">Click  <button id="conditions" onclick="term()" style="color: red;"><u><b>Terms And Conditions</b></u></button>  to see the Terms and Conditions</h5>
+		<br>
+		<button id="login_button" class="btn btn-primary" onclick="adduser()">Log in</button>
+		<br><br>
+        <button id="button_forget" onclick="switchpage()" style="color: white;">Forgot password?</button>
+
+	</div>
+</center>
+</body>
+</html>
